@@ -6,3 +6,7 @@ while i < 3:
 i = 0
 for i in range(3):
     print("meow")
+
+
+while True:
+    print("meow")
