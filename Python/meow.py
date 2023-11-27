@@ -1,12 +1,8 @@
 def main():
-    i = 0
-    while i < 3:
-        meow()
-        i += 1
+    meow(3)
 
-
-def meow():
-    print("meow")
-
+def meow(n):
+    for i in range(n):
+        print("meow")
 
 main()
