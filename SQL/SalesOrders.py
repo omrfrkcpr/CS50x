@@ -1,8 +1,7 @@
 import csv
 
 with open("SalesOrders.csv", "r") as file:
-    reader = csv.reader(file)
-    next(row)
+    reader = csv.DictReader(file)
     for row in reader:
-        favorite = row[1]
+        favorite = row["Region"]
         print(favorite)
