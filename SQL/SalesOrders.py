@@ -5,16 +5,16 @@ with open("SalesOrders.csv", "r") as file:
     counts = {}
     # East, Central, West = 0, 0, 0
     for row in reader:
-        favorite = row["Region"]
+        favorite = row["Item"]
         if favorite in counts:
             counts[favorite] += 1
         else:
             counts[favorite] = 1
 
-# def get_value(Region):
-#     return counts[Region]
+# def get_value(Item):
+#     return counts[Item]
 
-for favorite in sorted(counts, key=lambda Region: counts[Region], reverse=True):
+for favorite in sorted(counts, key=lambda Item: counts[Item], reverse=True):
     print(f"{favorite}: {counts[favorite]}")
 
         # if favorite == "Central":
