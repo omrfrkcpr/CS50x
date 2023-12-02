@@ -11,6 +11,11 @@ with open("SalesOrders.csv", "r") as file:
         else:
             counts[favorite] = 1
 
+
+# favorite = input("Favorite: ")
+# if favorite in counts:
+#     print(f"{favorite}: {counts[favorite]}")
+
 # def get_value(Item):
 #     return counts[Item]
 
