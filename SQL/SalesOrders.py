@@ -11,6 +11,12 @@ with open("SalesOrders.csv", "r") as file:
         else:
             counts[favorite] = 1
 
+# def get_value(Region):
+#     return counts[Region]
+
+for favorite in sorted(counts, key=lambda Region: counts[Region], reverse=True):
+    print(f"{favorite}: {counts[favorite]}")
+
         # if favorite == "Central":
         #     Central += 1
         # elif favorite == "East":
@@ -22,5 +28,3 @@ with open("SalesOrders.csv", "r") as file:
 # print(f"East: {East}")
 # print(f"West: {Central}")
 
-for favorite in counts:
-    print(f"{favorite}: {counts[favorite]}")
